@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konoha</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" async></script>
+    <!-- //tell html to load js file as same time as index.html file -->
+</head>
+<body>
+    <!-- <h1 class="page-title">KONOHA</h1> -->
+    <a class="page-title">
+       <img class = "page-title-img floating"src="https://fontmeme.com/permalink/220505/7459806221ea43499fb101131053dc0e.png" alt="glow-effect" border="0">
+    </a>
+    <div class="overlay-text visible" id="cts">
+        Click to Start
+    </div>
+    
+    <div id="game-over-text" class="overlay-text">
+        Baaaka !!!
+        
+        <span class="overlay-text-small"><img  class="nimg" src="./ncry.gif" alt=""></span> 
+        <span class="overlay-text-small">Try again</span> 
+    
+    </div>
+    <div id="victory-text" class="overlay-text">
+        DatteBayo!!
+        
+        <span class="overlay-text-small"><img  class="nimg2" src="./victoyimg.gif" alt=""></span> 
+        <span class="overlay-text-small">Play again</span> 
+    
+    </div>
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Time : <span id="time-remaining">60</span>
+            </div>
+            <div class="game-info">
+                Flips : <span id="flips">0</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc1.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc1.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+        </div> 
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc2.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc2.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc3.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc3.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc4.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc4.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc5.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc5.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc6.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc6.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc7.png" alt="Clan" height="150px" width="150px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc7.png" alt="Clan" height="150px" width="150px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc8.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                 <img class="spider" src="./bgc.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="./bgc8.jpg" alt="Clan" height="150px" width="150px">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
